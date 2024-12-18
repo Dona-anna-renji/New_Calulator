@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         b1=(Button) findViewById(R.id.loginadd);
         b2=(Button) findViewById(R.id.loginsub);
-        b3=(Button) findViewById(R.id.loginmul);
-        b4=(Button) findViewById(R.id.logindiv);
+        b4=(Button) findViewById(R.id.loginmul);
+        b3=(Button) findViewById(R.id.logindiv);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +38,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent o= new Intent(getApplicationContext(),SubActivity.class);
                 startActivity(o);
+            }
+        });
+
+
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent o4= new Intent(getApplicationContext(),MulActivity.class);
+                startActivity(o4);
             }
         });
     }
