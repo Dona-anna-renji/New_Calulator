@@ -1,0 +1,47 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/black"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/mulnum1"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/white"
+        android:hint="num1"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mulbtn"
+        android:layout_margin="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="*"
+        android:background="#E2AE11"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/mulnum2"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="50dp"
+        android:hint="num2"
+        android:background="@color/white"
+
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:id="@+id/mulresult"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="0"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>
